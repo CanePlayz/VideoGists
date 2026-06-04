@@ -12,7 +12,7 @@ export function TitleBar() {
                 <button
                     className="tb-btn"
                     aria-label="Minimieren"
-                    onClick={() => appWindow.minimize()}
+                    onPointerDown={() => appWindow.minimize()}
                 >
                     <svg width="10" height="10" viewBox="0 0 10 10">
                         <rect x="0" y="4.5" width="10" height="1" fill="currentColor" />
@@ -21,7 +21,7 @@ export function TitleBar() {
                 <button
                     className="tb-btn"
                     aria-label="Maximieren"
-                    onClick={() => appWindow.toggleMaximize()}
+                    onPointerDown={() => appWindow.toggleMaximize()}
                 >
                     <svg width="10" height="10" viewBox="0 0 10 10">
                         <rect
@@ -37,7 +37,7 @@ export function TitleBar() {
                 <button
                     className="tb-btn tb-close"
                     aria-label="Schließen"
-                    onClick={() => appWindow.close()}
+                    onPointerDown={() => appWindow.close()}
                 >
                     <svg width="10" height="10" viewBox="0 0 10 10">
                         <path d="M0 0 L10 10 M10 0 L0 10" stroke="currentColor" />

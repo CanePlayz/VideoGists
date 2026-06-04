@@ -390,6 +390,19 @@ button.secondary:hover:not(:disabled) {
   filter: none;
 }
 
+.new-gist-btn {
+  gap: 7px;
+  padding-left: 15px;
+}
+
+.new-gist-btn .plus {
+  font-size: 1.15em;
+  font-weight: 600;
+  line-height: 0;
+  position: relative;
+  top: 0.02em;
+}
+
 /* ---------- List ---------- */
 .list-section {
   position: relative;

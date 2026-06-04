@@ -137,7 +137,9 @@ function App() {
       <div className="app">
         <header className="app-header">
           <h1>VideoGists</h1>
-          <button onClick={() => setModal("new")}>+ Neuer Gist</button>
+          <button className="new-gist-btn" onClick={() => setModal("new")}>
+            <span className="plus" aria-hidden>+</span> Neuer Gist
+          </button>
         </header>
 
         <section className="list-section">
