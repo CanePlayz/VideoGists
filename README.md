@@ -74,6 +74,14 @@ copies it to the programs folder, replacing the previous version:
 Under the hood it runs `npm run tauri build -- --no-bundle` and copies
 `src-tauri\target\release\VideoGists.exe`.
 
+`scripts/build-portable.ps1` contains a personal deploy path and is therefore
+gitignored. On a fresh clone, copy the template and adjust the default
+`$Destination`:
+
+```powershell
+Copy-Item scripts/build-portable.example.ps1 scripts/build-portable.ps1
+```
+
 ## Cleaning build artifacts
 
 Remove regenerable build/cache folders (`src-tauri\target`, `dist`,
